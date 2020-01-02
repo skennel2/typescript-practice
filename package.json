@@ -1,7 +1,7 @@
 {
   "name": "typescript-npm",
   "version": "1.0.0",
-  "description": "",
+  "description": "타입스크립트 학습테스트",
   "main": "class.js",
   "scripts": {
     "test": "mocha -r ts-node/register tests/**/*.test.ts",

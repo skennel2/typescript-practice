@@ -8,6 +8,6 @@ npm i -D @types/chai @types/mocha <br/>
 
 ### 참고한 자료
 
-Writing unit tests in TypeScript: https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40
-Jest로 TypeScript 학습테스트 환경 만들기: https://gongzza.github.io/javascript/learning-typescript-with-jest/
-TypeScript-Handbook 한글 문서: https://typescript-kr.github.io/
+Writing unit tests in TypeScript: https://medium.com/@RupaniChirag/writing-unit-tests-in-typescript-d4719b8a0a40 <br/> 
+Jest로 TypeScript 학습테스트 환경 만들기: https://gongzza.github.io/javascript/learning-typescript-with-jest/ <br/>
+TypeScript-Handbook 한글 문서: https://typescript-kr.github.io/ <br/>
