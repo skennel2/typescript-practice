@@ -4,8 +4,8 @@
   "description": "타입스크립트 학습테스트",
   "main": "class.js",
   "scripts": {
-    "test": "mocha -r ts-node/register tests/**/*.test.ts",
-    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+    "test": "jest",
+    "main": "ts-node --project tsconfig.json ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,12 +18,11 @@
   },
   "homepage": "https://github.com/skennel2/typescript-practice#readme",
   "devDependencies": {
-    "@types/chai": "^4.2.7",
-    "@types/mocha": "^5.2.7",
-    "chai": "^4.2.0",
-    "mocha": "^6.2.2",
-    "nyc": "^15.0.0",
-    "ts-node": "^8.5.4",
-    "typescript": "^3.7.4"
-  }
+    "@types/jest": "^24.9.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^24.3.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {}
 }
