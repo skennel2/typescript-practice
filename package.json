@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/skennel2/typescript-practice#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.168",
     "@types/jest": "^24.9.0",
     "jest": "^25.1.0",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
