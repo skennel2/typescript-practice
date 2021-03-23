@@ -10,9 +10,16 @@ class Person implements HasName, HasNickName {
 }
 
 test('instanceOf 생성자로 생성한 인스턴스', () => {
-    const buddy3: Person = new Person("홍길동2", '길동이2');
+    const buddy: Person = new Person("홍길동2", '길동이2');
 
-    expect(buddy3 instanceof Person).toEqual(true);
+    expect(buddy instanceof Person).toEqual(true);
+});
+
+
+test('instanceOf 생성자로 생성한 인스턴스 Partial 레퍼런스', () => {
+    const buddy: Partial<Person> = new Person("홍길동2", '길동이2');
+
+    expect(buddy instanceof Person).toEqual(true);
 });
 
 test('instanceOf Partial 타입', () => {
@@ -25,10 +32,10 @@ test('instanceOf Partial 타입', () => {
 });
 
 test('instanceOf & 교차타입', () => {
-    const buddy2: HasName & HasNickName = {
+    const buddy: HasName & HasNickName = {
         name: '홍길동',
         nickName: '길동이'
     };
 
-    expect(buddy2 instanceof Person).toEqual(false);
+    expect(buddy instanceof Person).toEqual(false);
 });
