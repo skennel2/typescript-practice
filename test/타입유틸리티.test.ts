@@ -11,6 +11,7 @@ test('Readonly<T>', () => {
         completed: false
     };
 
+    // 주석풀시 컴파일 에러
     // todo.completed = true;
 });
 
@@ -47,24 +48,24 @@ test('Record<T, K>', () => {
  * T에서 프로퍼티 K의 집합을 선택해 타입을 구성합니다.
  */
 test('Pick<T, K>', () => {
-    const TodoPreview: Pick<Todo, 'title' | 'completed'> = {
+    const todoPreview: Pick<Todo, 'title' | 'completed'> = {
         title: '쇼핑하기',
         completed: false
     };
 
-    expect(TodoPreview).toHaveProperty('title')
-    expect(TodoPreview).toHaveProperty('completed')
+    expect(todoPreview).toHaveProperty('title')
+    expect(todoPreview).toHaveProperty('completed')
 });
 
 /**
  * T에서 모든 프로퍼티를 선택한 다음 K를 제거한 타입을 구성합니다.
  */
 test('Omit<T, K>', () => {
-    const TodoPreview: Omit<Todo, 'description'> = {
+    const todoPreview: Omit<Todo, 'description'> = {
         title: '쇼핑하기',
         completed: false
     };
 
-    expect(TodoPreview).toHaveProperty('title')
-    expect(TodoPreview).toHaveProperty('completed')
+    expect(todoPreview).toHaveProperty('title')
+    expect(todoPreview).toHaveProperty('completed')
 });
