@@ -1,4 +1,4 @@
-import faker from 'faker'
+import faker from 'faker/locale/ko'
 
 test('faker test', () => {
     const randomName = faker.name.findName();
